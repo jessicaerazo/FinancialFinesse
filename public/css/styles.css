@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #FFFFFF;
+  font-family: 'Gotham', Lato, sans-serif;
+  font-size: 16px;
+}
+
+/* global */
+
+.container{
+  min-width: 1440px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.dash-left{
+  width: 66px;
+  border: 3px solid #238BB4;
+  margin-bottom: 90px;
+}
+
+.dash-center{
+  width: 66px;
+  border: 3px solid #238BB4;
+  margin: 0 auto 90px auto;
+}
+
+h1.title{
+  color: #2A6CA0;
+  font-size: 50px;
+  font-weight: 100;
+  margin-bottom: 40px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ddd;
+}
+
+
+/* navigation */
+
+#navigation{
+  background: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+#navigation nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 25px;
+}
+
+#navigation .logo {
+  width: 140px;
+  height: 44px;
+  background-image: url("../images/logo@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 140px 44px;
+}
+
+#navigation .navigation{
+  list-style-type: none;
+}
+
+#navigation .navigation li{
+    display: inline;
+    padding: 0 0 0 60px;
+    color: #0888B4;
+    text-transform: uppercase;
+    list-style: none;
+    font-weight: 500;
+}
+
+#navigation .navigation li a {
+  text-decoration: none;
+  color: #0888B4;
+  transition: color 500ms;
+}
+
+#navigation .navigation li a:hover {
+  color: #00507C;
+}
+
+
+/* navigation - login form  */
+
+#login{
+  width: 350px;
+  position: absolute;
+  top: 105px;
+  right: 25px;
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  z-index: 100;
+}
+
+#login .form-group{
+  margin-bottom: 20px;
+}
+
+#login .form-group label{
+  font-size: 14px;
+  color: #999;
+  display: block;
+  margin-bottom: 2px;
+}
+
+#login .form-group .input{
+  border: 0px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 16px;
+  height: 44px;
+  width: 100%;
+}
+
+#login .form-group .input:focus{
+  outline: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#login .button{
+  background: #0888B4;
+  background: linear-gradient(to bottom,  rgba(9,124,171,1) 0%,rgba(0,80,124,1) 100%);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border: 0px;
+  margin-bottom: 20px;
+}
+
+#login p{
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+#login p a{
+  color: #0888B4;
+  text-decoration: none;
+  transition: color 500ms;
+}
+
+#login p a:hover{
+  color: #00507C;
+}
+
+
+/* header */
+
+#header{
+  width: 100%;
+  height: 989px;
+  position: relative;
+  background: url(../images/cooking.png) no-repeat;
+  background-size: cover;
+}
+
+#header .headline {
+  padding: 300px 0 0 190px;
+  width: 905px;
+}
+
+#header .headline h1{
+  color: #00507C;
+  font-size: 40px;
+  font-weight: 100;
+  line-height: 56px;
+  text-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+
+#header p{
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 40px;
+  color: #505050;
+  margin: 20px 0 40px 0;
+}
+
+#banner{
+  margin-top: 315px;
+  z-index: 1;
+}
+
+#banner .info{
+  padding: 0 200px;
+  margin: 0 190px;
+  height: 165px;
+  background: #077CAB;
+  text-align: center;
+  box-shadow: 4px 10px 12px 0 rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner .info .column1{
+  padding-right: 65px;
+}
+
+#banner .info .column1 h1{
+  font-weight: 400;
+  font-size: 40px;
+  color: #fff;
+}
+
+#banner .info .column1 h2{
+  font-weight: 100;
+  font-size: 40px;
+  color: #fff;
+}
+
+#banner .info .column2{
+  border-left: 4px solid #fff;
+  padding-left: 65px;
+}
+
+#banner .info .column2 h1{
+  font-weight: 100;
+  font-size: 56px;
+  color: #fff;
+}
+
+#banner .info .column2 h2{
+  font-weight: 100;
+  font-size: 24px;
+  color: #fff;
+}
+
+#testimonials .container {
+  padding: 170px 115px;
+}
+
+#testimonials p {
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 40px;
+  padding: 0 190px;
+  margin: 0px 0 60px 0;
+  color: #505050;
+}
+
+#testimonials .row {
+  display: flex;
+  flex-direction: row;
+}
+
+#testimonials .testimonial{
+  text-align: center;
+  padding: 0px 75px;
+}
+
+#testimonials img{
+  width: 270px;
+  height: 270px;
+}
+
+#testimonials blockquote {
+  margin-top: 50px;
+  width: 100%;
+  font-size: 22px;
+  line-height: 44px;
+  font-style: italic;
+  color: #505050;
+  text-align: center;
+}
+
+
+/* checklist */
+
+#benefits {
+  position: relative;
+  background: #097CAB;
+  color: #FFF;
+  background-image: url(../images/hands-with-plants.png), linear-gradient(to bottom,  rgba(9,124,171,1) 0%,rgba(0,80,124,1) 100%);
+  background-size: cover;
+  background-repeat: none;
+}
+
+#benefits .row{
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#benefits .column1, #benefits .column2{
+  width: 50%;
+}
+
+#benefits .column1 h1 {
+  width: 530px;
+  font-size: 52px;
+  font-weight: 100;
+  margin: 0 0 0 190px;
+}
+
+#benefits .column2 li {
+  font-size: 25px;
+  font-weight: 100;
+  list-style-type: none;
+  background: url('../images/check_on_light@2x.png') no-repeat;
+  background-size: 24px 24px;
+  padding-left: 50px;
+  margin-bottom: 25px;
+}
+
+#benefits .column2 li:last-child{
+  margin-bottom: 0px;
+}
+
+/* financial coaches */
+
+#financial-coaches {
+  background: #F2F2F2;
+}
+
+#financial-coaches .row{
+  display: flex;
+  flex-direction: row;
+  height: 900px;
+  justify-content: center;
+  align-items: center;
+}
+
+#financial-coaches .column1 .coaches{
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#financial-coaches .column2{
+  padding: 0 190px 0 80px;
+}
+
+#financial-coaches .column1 .coaches img{
+  width: 300px;
+  height: 300px;
+}
+
+#financial-coaches .column2 p{
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 40px;
+  color: #505050;
+  font-weight: 100;
+}
+
+#financial-coaches .column2 a.button{
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  color: #238BB4;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 60px 0;
+  font-weight: 100;
+  transition: color 500ms;
+}
+
+#financial-coaches .column2 a.button:hover{
+  color: #00507C;
+}
+
+#about .heading{
+  text-align: center;
+}
+
+.AboutCompany-container{
+  width: 100%;
+  background: #FFFFFF;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+#about .container{
+  padding: 90px 110px;
+}
+
+#about .logo{
+  width: 226px;
+  height: 71px;
+  margin: 0px auto 40px auto;
+  background-image: url("../images/logo/about_logo.png");
+}
+
+
+#about .row{
+  display: flex;
+  flex-direction: row;
+}
+
+#about .column{
+  padding: 0px 80px;
+}
+
+#about .column p{
+  font-size: 22px;
+  color: #505050;
+  font-weight: 100;
+  line-height: 44px;
+}
+
+
+#footer {
+  position: relative;
+  width: 100%;
+  background: #097CAB;
+  text-align: center;
+  background-image: url(../images/pexels-photo.png) no-repeat;
+  background-image: url(../images/pexels-photo.png), linear-gradient(to bottom,  rgba(9,124,171,1) 0%,rgba(0,80,124,1) 100%);
+  background-repeat: none;
+  background-size: cover;
+}
+
+
+#footer .container{
+  width: 1550px;
+  padding: 90px 0 20px 0;
+}
+
+#footer .row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+#footer .row .logo{
+  width: 290px;
+  text-align: center;
+}
+
+#footer h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0 0 60px 0;
+  color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 1919px) {
+  #banner .info{
+    margin: 0 40px;
+  }
+
+  #financial-coaches .column2{
+    padding: 0 40px 0 80px;
+  }
+
+  #about .container{
+    padding: 90px 40px;
+  }
+
+  #testimonials .container {
+    padding: 170px 40px;
+  }
+
+  h1.title{
+    font-size: 40px;
+  }
+
+  .dash-left{
+    margin-bottom: 40px;
+  }
+
+  .dash-center{
+    margin: 0 auto 40px auto;
+  }
+
+}
